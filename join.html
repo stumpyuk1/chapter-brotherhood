@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us – Chapter Brotherhood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span class="shield">B</span>
+      <span>CHAPTER BROTHERHOOD</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+  </header>
+
+  <main class="join-page">
+    <h1>Join Us</h1>
+    <p>Start or lead a local chapter, or join one near you. Discord is available for early connection.</p>
+
+    <form class="join-form" action="#" method="post">
+      <label>Name<br><input type="text" name="name" required></label>
+      <label>Email<br><input type="email" name="email" required></label>
+      <label>Location (town/city)<br><input type="text" name="location" required></label>
+      <label>I want to:<br>
+        <select name="path">
+          <option>Start or lead a local chapter</option>
+          <option>Join a chapter near me</option>
+          <option>Both</option>
+        </select>
+      </label>
+      <label>Background (optional)<br>
+        <input type="checkbox" name="bg" value="armed"> Armed forces
+        <input type="checkbox" name="bg" value="emergency"> Emergency services
+        <input type="checkbox" name="bg" value="professional"> Professional
+        <input type="checkbox" name="bg" value="other"> Other
+      </label>
+      <label>Note (optional)<br><textarea name="note" rows="3"></textarea></label>
+      <button type="submit" class="btn">Submit interest</button>
+    </form>
+
+    <p class="discord-note">After submitting, join the Discord for coordination: <a href="https://discord.gg/your-invite-here">Join Discord</a></p>
+  </main>
+
+  <footer>
+    <p>Chapter Brotherhood · Private association · Local first</p>
+  </footer>
+</body>
+</html>
