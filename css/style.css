@@ -33,17 +33,10 @@ header {
   letter-spacing: 0.05em;
 }
 
-.shield {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 42px;
-  background: var(--off-white);
-  color: var(--navy);
-  font-weight: 700;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  font-size: 1.1rem;
+.shield-logo {
+  width: 40px;
+  height: 48px;
+  flex-shrink: 0;
 }
 
 nav a {
@@ -59,6 +52,19 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+}
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--navy);
+  display: inline-block;
+  padding-bottom: 0.4rem;
 }
 
 .hero h1 {
@@ -104,7 +110,15 @@ main {
 .join-page h1 {
   font-family: 'Playfair Display', serif;
   color: var(--navy);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline-small {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--navy);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
 }
 
 .join-form {
@@ -146,4 +160,5 @@ footer {
 @media (max-width: 600px) {
   header { flex-direction: column; gap: 1rem; }
   .hero h1 { font-size: 2.2rem; }
+  .tagline { font-size: 1.3rem; }
 }
