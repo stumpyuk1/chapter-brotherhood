@@ -1,4 +1,4 @@
-/* Chapter Brotherhood – lighter navy, moodboard-aligned */
+/* Chapter Brotherhood – lighter navy, decorative CB shield logo */
 :root {
   --navy: #1B3A5F;
   --navy-dark: #142C48;
@@ -7,6 +7,7 @@
   --warm-grey: #E8E4DC;
   --bronze: #8B7355;
   --bronze-dark: #6B5A45;
+  --gold: #C4A46A;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,8 +39,8 @@ header {
 }
 
 .shield-logo {
-  width: 38px;
-  height: 46px;
+  width: 46px;
+  height: 54px;
   flex-shrink: 0;
 }
 
@@ -52,7 +53,7 @@ nav a {
 }
 
 .btn-nav {
-  border: 1px solid var(--bronze);
+  border: 1px solid var(--gold);
   padding: 0.5rem 1.2rem;
   color: var(--ivory) !important;
 }
