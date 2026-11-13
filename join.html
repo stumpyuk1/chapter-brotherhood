@@ -12,15 +12,12 @@
 <body>
   <header>
     <div class="logo">
-      <svg class="shield-logo" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 5 L90 25 L90 75 L50 110 L10 75 L10 25 Z" fill="#F7F5F0"/>
-        <text x="50" y="72" font-family="Playfair Display, serif" font-size="48" font-weight="700" fill="#0D1B2A" text-anchor="middle">B</text>
-      </svg>
+      <img src="logo.png" alt="Chapter Brotherhood logo" class="shield-logo">
       <span>CHAPTER BROTHERHOOD</span>
     </div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="join.html">Join Us</a>
+      <a href="join.html" class="btn-nav">Join Us</a>
     </nav>
   </header>
 
@@ -29,7 +26,8 @@
     <p class="tagline-small">Strength. Honour. Legacy.</p>
     <p>Start or lead a local chapter, or join one near you. Discord is available for early connection.</p>
 
-    <form class="join-form" action="#" method="post">
+    <!-- Replace YOUR_FORM_ID with the ID from your Formspree form -->
+    <form class="join-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <label>Name<br><input type="text" name="name" required></label>
       <label>Email<br><input type="email" name="email" required></label>
       <label>Location (town/city)<br><input type="text" name="location" required></label>
@@ -41,10 +39,10 @@
         </select>
       </label>
       <label>Background (optional)<br>
-        <input type="checkbox" name="bg" value="armed"> Armed forces
-        <input type="checkbox" name="bg" value="emergency"> Emergency services
-        <input type="checkbox" name="bg" value="professional"> Professional
-        <input type="checkbox" name="bg" value="other"> Other
+        <input type="checkbox" name="background" value="Armed forces"> Armed forces<br>
+        <input type="checkbox" name="background" value="Emergency services"> Emergency services<br>
+        <input type="checkbox" name="background" value="Professional"> Professional<br>
+        <input type="checkbox" name="background" value="Other"> Other
       </label>
       <label>Note (optional)<br><textarea name="note" rows="3"></textarea></label>
       <button type="submit" class="btn">Submit interest</button>
