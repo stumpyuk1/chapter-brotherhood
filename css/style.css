@@ -1,4 +1,4 @@
-/* Chapter Brotherhood – lighter navy, decorative CB shield logo */
+/* Chapter Brotherhood – with PNG logo */
 :root {
   --navy: #1B3A5F;
   --navy-dark: #142C48;
@@ -39,8 +39,8 @@ header {
 }
 
 .shield-logo {
-  width: 46px;
-  height: 54px;
+  height: 52px;
+  width: auto;
   flex-shrink: 0;
 }
 
